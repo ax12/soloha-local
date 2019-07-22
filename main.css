@@ -20,7 +20,17 @@ body, nav {
 .soloha-menu-top a{
     text-transform: uppercase;
     margin: 10px 20px;
-    color: black;
+    color: rgb(0, 0, 0) !important;
+    white-space: nowrap;
+   
+
+}
+
+.soloha-menu-top {
+    text-transform: uppercase;
+    margin: 10px 20px;
+    color: rgb(0, 0, 0) !important;
+    white-space: nowrap;
 }
 
 .site-title {

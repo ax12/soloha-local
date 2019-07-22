@@ -43,7 +43,11 @@
 		    </div>
                               <div class="custom-logo"> <?php the_custom_logo(); ?> </div><!-- .site-branding -->
 
-                    <nav  class="main-navigation soloha-menu-top row1 justify-content-center "> 
+  <nav class="navbar navbar-expand-lg navbar-light nav soloha-menu-top  nav-link navbar-nav text-center">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
                     
                     <? wp_nav_menu([
                     'theme_location' => 'heder-menu',
@@ -54,31 +58,12 @@
                     'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
                     'walker'          => new WP_Bootstrap_Navwalker()   
                     ]);
-                    ?></nav>
+                    ?>
+      </div>
+</nav>
                     
                             
-                               <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Navbar</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Features</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Pricing</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-      </li>
-    </ul>
-  </div>
-</nav>       
+
                                             
                                                             
                   
