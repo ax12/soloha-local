@@ -10,9 +10,6 @@
  */
 
 ?>
-
-
-
 <div class="row footer-bg mm justify-content-center">
                     <div class="col-md-3 col-sm-12">
                       
