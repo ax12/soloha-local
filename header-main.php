@@ -31,6 +31,8 @@
             <div class="col-xl-3 col-md-2 d-none d-md-block d-lg-block left-header pl-0 "> <img src="wp-content/themes/soloha/img/left-header.png" alt=""> </div>
                 <div class="col-12 col-md-8 col-sm-12 col-xl-6 head-center">
                   
+                  
+                  
 			<div class="site-branding row justify-content-center">
 			        <div class="contact-head">
 			            <? echo get_theme_mod ('addres','Укажите адрес');?>
@@ -40,29 +42,36 @@
                     <a href="tel:<? echo get_theme_mod ('phone');?>"><? echo get_theme_mod ('phone');?></a>
                     </div>
                   
+                  
+                  
 		    </div>
                               <div class="custom-logo"> <?php the_custom_logo(); ?> </div><!-- .site-branding -->
 
-  <nav class="navbar navbar-expand-lg navbar-light nav soloha-menu-top  nav-link navbar-nav text-center">
+  <nav class="navbar  navbar-expand-lg navbar-light nav soloha-menu-top  nav-link navbar-nav text-center ">
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
+          
+         
+          
+          
+      <div class="collapse navbar-collapse myalign" id="navbarNav">
                     
                     <? wp_nav_menu([
                     'theme_location' => 'heder-menu',
                      'menu_id'        => 'primary-menu',
                     'depth'           => 2,
                     'container'       => false,
-                    'menu_class'      => 'navbar-nav mr-auto',
+                    'menu_class'      => 'navbar-nav mr-auto myalign',
                     'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
                     'walker'          => new WP_Bootstrap_Navwalker()   
                     ]);
                     ?>
       </div>
+    
 </nav>
-                    
-                            
+                                   
+                           
 
                                             
                                                             

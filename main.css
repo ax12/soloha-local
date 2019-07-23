@@ -19,11 +19,17 @@ body, nav {
 
 .soloha-menu-top a{
     text-transform: uppercase;
-    margin: 10px 20px;
+    margin: 10px 10px;
     color: rgb(0, 0, 0) !important;
     white-space: nowrap;
+    width: 100%;
    
 
+}
+
+.myalign {
+   
+        margin: 0 auto; 
 }
 
 .soloha-menu-top {
